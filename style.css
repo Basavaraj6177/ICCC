@@ -1,263 +1,168 @@
-body,
-html {
-    width: 100%;
-	height: 100%;
-	
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+
+/* Main Body Styling */
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
 }
-body, p {
-	color: #4d5055; 
-	font-family:  'Times New Roman';
+
+h1, h2, h3, h4 {
+    color: #2b2b2b;
 }
-.main-head{
+
+/* Header */
+.main-head {
     text-align: center;
-    padding-top: 30px;
-
-}
-.container{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-/* .h{
-    margin-top: 5px;
-} */
-
-.TOCE-logo{
-    width: 150px;
-    height: 150px;
+    padding: 20px;
+    background-color: #3f51b5;
+    color: white;
 }
 
-.nav {
-    flex-grow: 20%;
-    max-width: 20%;
-    
-   
-    z-index: 1;
-    top: 0;
-    left: 0;
-    
-    display: flex;
-    flex-direction: column;
-    
-    padding-left: 20px;
-    padding-top: 60px;
-    border-right: thin solid black;
-    padding-right: 10px;
-    
-  }
-
-.body{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 80%;
-}
-
-.nav a{
-    text-decoration: none;
-    color: black;
-    justify-content: center;
-    
-    
-
+/* Logo Styling */
+.TOCE-logo {
+    width: 80px;
+    height: auto;
 }
 
 
-/* CSS */
-.nav a {
-  align-items: center;
-  appearance: button;
-  background-color: #0276FF;
-  border-radius: 8px;
-  border-style: none;
-  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  flex-shrink: 0;
-  font-family: "RM Neue",sans-serif;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-  padding: 10px 21px;
-  text-align: center;
-  text-transform: none;
-  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin-bottom: 20px;
-}
-.navbar-links li{
-    list-style-type: none;
-}
-.nav a:active {
-  background-color: #006AE8;
-}
 
-.nav a:hover {
-  background-color: #1C84FF;
-}
-.main-container{
-    display: flex;
-    flex-direction: row;
-    
 
-    width: 100%;
-    height: 100%;
-}
-.main-container > *{
-    flex: 2 1 auto;
-}
+
+
+
 
 .card {
-    width: 90%;
-    padding: 50px;
-    padding-left: 100px;
-    
-    border-radius: 50px;
-    background: #e0e0e0;
-    box-shadow: 20px 20px 60px #bebebe,
-                  -20px -20px 60px #ffffff;
-    align-items: center;
-    justify-content: center;
-
-   }
-
-.card li{
-    text-align: left;
-    padding-bottom: 2px;
-    font-size: 20px;
-    
+    background-color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.card p,h2{
-    padding-bottom: 10px;
 
+/* About Section */
+.card h2 {
+    color: #3f51b5;
 }
-.card h2{
-    text-align: left;
-    text-decoration: underline;
+
+.card ul {
+    padding-left: 20px;
+    list-style-type: disc;
 }
-.card{
+
+.card p, .card ul li {
+    font-size: 15px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #2b2b2b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
     margin-top: 30px;
 }
-.right-container{
-    padding-left: 50px;
+
+.conference-header {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #d7e7fa, #6db0e4);
+    padding: 20px;
+    text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
-    /* For mobile phones: */
-    .TOCE-logo{
-        width: 80px;
-        height: 80px;
-    }
-    .main-head{
-        width: 100%;
-        
-    }
-    .container{
-        display: flex;
-        flex-direction: column;
-    }
-    h2{
-        font-size: 20px;
-    }
-    h1{
-        font-size: 25px;
-    }
-    h4{
-        font-size: 16px;
-        
-    }
-    p{
-        font-size: 14px;
-    }
-    .main-container{
-        display: flex;
-        flex-direction: column;
-    }
-    .nav{
-        width: 100%;
-        display: flex;
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.conference-info h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.conference-info h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.conference-info p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.conference-info h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #333;
+}
+
+@media (min-width: 768px) {
+    .conference-header {
         flex-direction: row;
-        border-right: 0px;
-    }
-    .nav a{
-        color: white;
+        justify-content: space-between;
+        padding: 20px 50px;
     }
 
-
-
-  }
-
-
-  @media (max-width: 800px) {
-    .nav {
-		display: flex;
-        flex-direction: column;
-        align-items: center;
-		justify-content: space-between;
-		max-width: 100%;
-    }
-	
-
-    .toggle-button {
-        display: flex;	
-		margin-top: 20px;
+    .conference-info h1 {
+        font-size: 1.8em;
     }
 
-    .navbar-links {
-        display: none;
-        width: 100%;
+    .conference-info h2 {
+        font-size: 2.2em;
     }
 
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar-links ul li {
-        text-align: center;
-    }
-
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-    .navbar-links li{
-        list-style-type: none;
-    }
-	
-	p.pp{
-		font-size: 10px;
-	}
-    .right-container h2{
-        font-size: 16px;
-    }
-    .right-container li{
-        font-size: 12px;
-    }
-    .card{
-        margin-left: -20px;
-        padding: 10px;
-        padding-left: 20px;
-        width: 95%;
+    .conference-info h3 {
+        font-size: 1.5em;
     }
 }
 
+@media (max-width: 767px) {
+    .conference-info h1 {
+        font-size: 1.2em;
+    }
 
+    .conference-info h2 {
+        font-size: 1.8em;
+    }
+
+    .conference-info h3 {
+        font-size: 1.2em;
+    }
+}
+
+#navbar{
+    transition: top 0.3s; 
+}
+
+.fixed-top {
+    
+    position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; 
+}
