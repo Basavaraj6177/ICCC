@@ -1,22 +1,16 @@
 
 
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-})
-
 document.addEventListener("DOMContentLoaded", function() {
-    window.onscroll = function() {
+    window.addEventListener("scroll", function() {
         var navbar = document.getElementById("navbar");
-        var headerHeight = document.querySelector(".conference-header").offsetHeight;
+        var header = document.querySelector(".conference-header");
+        var headerHeight = header.offsetHeight;
 
-        // Check if the page is scrolled beyond the header height
         if (window.scrollY > headerHeight) {
             navbar.classList.add("fixed-top");
         } else {
             navbar.classList.remove("fixed-top");
-        }
-    };
+        }
+    });
 });
+
