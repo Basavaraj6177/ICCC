@@ -172,3 +172,7 @@ footer {
 .container-fluid{
     padding: 0;
 }
+
+.mybuttonid{
+    cursor: pointer;
+}
